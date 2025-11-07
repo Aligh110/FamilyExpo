@@ -8,17 +8,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-<script>
+<script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#11d4d4",
-                        "background-light": "#f8fcfc",
-                        "background-dark": "#102222",
+                        "primary": "#40E0D0",
+                        "background-light": "#F5F5F5",
+                        "background-dark": "#000020",
                         "soft-navy": "#000080",
-                        "gold": "#FFD700"
+                        "gold": "#FFD700",
                     },
                     fontFamily: {
                         "display": ["Public Sans", "Noto Sans Arabic", "sans-serif"]
@@ -33,7 +33,7 @@
             },
         }
     </script>
-<style>
+    <style>
         body {
             font-family: 'Public Sans', 'Noto Sans Arabic', sans-serif;
         }
@@ -46,231 +46,338 @@
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark">
+<body class="bg-background-light dark:bg-background-dark font-display">
 <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
 <div class="layout-container flex h-full grow flex-col">
-<div class="px-40 flex flex-1 justify-center py-5">
+<div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
 <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+
+<!--HEADER STARTS-->>
 <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-primary/20 px-10 py-3">
-<div class="flex items-center gap-4 text-soft-navy dark:text-white">
-<div class="size-6 text-primary">
-<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
-</svg>
-</div>
-<h2 class="text-soft-navy dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">نمایشگاه ملی جمعیت و خانواده</h2>
-</div>
-<div class="flex flex-1 justify-end gap-8">
-<div class="flex items-center gap-9">
-<a class="text-soft-navy dark:text-white text-sm font-medium leading-normal" href="#">خانه</a>
-<a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="aboutus.html">درباره ما</a>
-<a class="text-soft-navy dark:text-white text-sm font-medium leading-normal" href="programsandevents.html">برنامه رویدادها</a>
-<a class="text-soft-navy dark:text-white text-sm font-medium leading-normal" href="#">ثبت نام</a>
-</div>
-<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
-<span class="truncate">ورود</span>
-</button>
-</div>
+	<div class="flex items-center gap-4 text-soft-navy dark:text-white">
+	<div class="flex items-center gap-4 text-soft-navy dark:text-white">
+		<div class="h-6 w-auto">
+			<img src="images/Expo Logo.png" alt="نمایشگاه ملی جمعیت و خانواده" class="h-full w-full object-contain">
+		</div>
+		<h2 class="text-soft-navy dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">نمایشگاه ملی جمعیت و خانواده</h2>
+	</div>
+	<!--<div class="size-6 text-primary">
+	<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+	<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+	</svg>
+	</div>-->>
+	<h2 class="text-soft-navy dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">نمایشگاه ملی جمعیت و خانواده</h2>
+	</div>
+	<div class="flex flex-1 justify-end gap-8">
+	<div class="flex items-center gap-9">
+	<a class="text-soft-navy dark:text-white text-sm font-medium leading-normal" href="index,html#">خانه</a>
+	<a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="aboutus.html">درباره ما</a>
+	<a class="text-soft-navy dark:text-white text-sm font-medium leading-normal" href="programsandevents.html">برنامه رویدادها</a>
+	<a class="text-soft-navy dark:text-white text-sm font-medium leading-normal" href="contactus.html#">تماس با ما </a>
+	</div>
+	<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]" href="registration.html">
+	<span class="truncate">ثبت نام</span>
+	</a>
+	</div>
 </header>
-<main class="flex flex-col gap-8 py-10">
-<div class="px-4">
-<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-lg items-center justify-center p-4" data-alt="Abstract image of a happy family, symbolizing unity and strength." style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 128, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBOD5fPA4S421SMJTmwtMYEaEnrXF6-H3ufh9fyLImG1CdgmKB3TGuQp9gmYKwwksx7xJmFS-ATONUfsGNwqCvHCbgAHxpBUKEStG9tGaqwXdlecrWP5Qy6HNgkcpbxo8l_seV12t8C5sdTgVE8sYKxYl-swNI2bwDpqYiLdVTxxYt9mEqb_0fLmWXsN2f8vfMlmECJcxKcKhUeyWPhTVU9Yjka_yBtwV_iH3barkdZN8kQXJrCwYPg5kCR9Ejb_9tDoI5VMA_ksYM");'>
-<div class="flex flex-col gap-4 text-center">
-<h1 class="text-white text-5xl font-black leading-tight tracking-[-0.033em]">هم‌افزایی ملی برای خانواده‌ای پایدار</h1>
-<h2 class="text-white/90 text-lg font-normal leading-normal">نمایشگاه ملی جمعیت و خانواده، گامی نوین در جهت تقویت نهاد خانواده و جوانی جمعیت.</h2>
-</div>
-<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
-<span class="truncate">بیشتر بدانید</span>
-</button>
-</div>
-</div>
-<div class="px-4">
-<h2 class="text-soft-navy dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5 border-b-2 border-primary/30 mb-4">درباره نمایشگاه</h2>
-<p class="text-soft-navy/90 dark:text-white/90 text-base font-normal leading-relaxed pb-3 pt-1">
-                                نمایشگاه ملی جمعیت و خانواده با هدف ایجاد یک شبکه ملی پایدار و هم‌افزا در حوزه جمعیت و خانواده، توسط وزارت ورزش و جوانان و با همکاری شرکای ملی برگزار می‌شود. این نمایشگاه به دنبال ارائه راهکارهای نوین و کاربردی برای چالش‌های پیش روی خانواده ایرانی است. ما به دنبال ایجاد آینده‌ای روشن برای خانواده ایرانی هستیم، جایی که هر خانواده‌ای بتواند در محیطی حمایت‌گر رشد کرده و شکوفا شود.
-                            </p>
-</div>
-<div class="px-4">
-<h2 class="text-soft-navy dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5 border-b-2 border-primary/30 mb-4">هم‌افزایی ملی</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-<div>
-<p class="text-soft-navy/90 dark:text-white/90 text-base font-normal leading-relaxed pb-3 pt-1">
-                                        مفهوم "هم‌افزایی ملی" در قلب این نمایشگاه قرار دارد. این ویدیو به صورت بصری نشان می‌دهد که چگونه همکاری و تلاش مشترک نهادهای مختلف دولتی، خصوصی و مردمی می‌تواند به تقویت خانواده و رشد جمعیت منجر شود.
-                                    </p>
-</div>
-<div class="p-4 bg-background-light dark:bg-background-dark rounded-xl shadow-lg">
-<div class="relative flex items-center justify-center bg-cover bg-center aspect-video rounded-lg" data-alt="A short video illustrating the concept of national synergy in strengthening families." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCWo_p4k6qHzcit9sZuqm9pDXVMxghvnl16frPfCDLUAB2qeeFNp2zKeRUKVwcUxQ4_SC60eKyMiVLz9o2dWwRPPVIR1B0u24S17RAHGoLFkJ8y7YKv3_YNHBSqr7glnrrzBS9ic0tNBMqCWCDrisWBq9hcAf5aVq19pMs3Y6AaPllME4k3mIbgX8vMvN2lNcwgIJBU2xFKyKf5Pit4DHVjhUCDEQOefbB9Osmfz0lOcLrmdO3z9cPYj3GHcVSjDHj2n99eOCjrwKg");'>
-<button class="flex shrink-0 items-center justify-center rounded-full size-16 bg-black/50 text-white hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-4xl">play_arrow</span>
-</button>
-<div class="absolute inset-x-0 bottom-0 px-4 py-3">
-<div class="flex h-4 items-center justify-center gap-1">
-<div class="h-1 flex-1 rounded-full bg-white/80"></div>
-<div class="relative"><div class="absolute -left-1.5 -top-1.5 size-3 rounded-full bg-primary ring-2 ring-white"></div></div>
-<div class="h-1 flex-1 rounded-full bg-white/40"></div>
-</div>
-<div class="flex items-center justify-between text-xs font-medium text-white pt-1">
-<p>0:37</p>
-<p>2:23</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
-<div>
-<h3 class="text-soft-navy dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] pb-3 pt-5 border-b-2 border-primary/30 mb-4">اهداف ما</h3>
-<ul class="list-disc list-inside space-y-2 text-soft-navy/90 dark:text-white/90">
-<li>ایجاد بستری برای تبادل دانش و تجربه بین فعالان حوزه خانواده.</li>
-<li>معرفی دستاوردها و نوآوری‌ها در زمینه جمعیت و خانواده.</li>
-<li>تقویت همکاری‌های بین‌بخشی برای حل مسائل خانواده.</li>
-<li>افزایش آگاهی عمومی نسبت به اهمیت نهاد خانواده.</li>
-</ul>
-</div>
-<div>
-<h3 class="text-soft-navy dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] pb-3 pt-5 border-b-2 border-primary/30 mb-4">چشم‌انداز آینده</h3>
-<p class="text-soft-navy/90 dark:text-white/90 text-base font-normal leading-relaxed">
-                                    ما در نظر داریم این نمایشگاه را به یک رویداد سالانه و یک شبکه ملی پایدار تبدیل کنیم که به طور مستمر در راستای تقویت بنیان خانواده و جوانی جمعیت فعالیت می‌کند. چشم‌انداز ما ایرانی است با خانواده‌هایی قوی، پویا و امیدوار.
-                                </p>
-</div>
-</div>
-<div class="px-4 pt-10">
-<h2 class="text-center text-soft-navy dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] mb-6">برگزار کنندگان و همکاران</h2>
-<div class="flex justify-center items-center gap-12 flex-wrap">
-<div class="flex flex-col items-center gap-2">
-<img alt="وزارت ورزش و جوانان" class="h-16 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSr3pmlP6IG6RsTN_kI2ZWAJA-wS6nfuglXjo-Izl_O0rx5Cm1N0vbPmZispNvH75bJT6qCJJ3VHujYvKDgkr3_hvRgGChLQYV_mS5vQ3d-CIPcxG1SSAv-fj78rH7I_c6n2v0RPgG0k4v0UJc3nHJsCIe7LXPQyMLlfHd0iK4JzStruvNt37QBahjYKNw_UHkugb7u41P9xIzXBz9c71QP0ZlKdhpYPuZGfcxPIai2H7JrFsForWoJHc_3-wbtHm6QQ1DkpCGWmM"/>
-<p class="text-sm text-soft-navy/80 dark:text-white/80">وزارت ورزش و جوانان</p>
-</div>
-<div class="flex flex-col items-center gap-2">
-<img alt="شریک ملی ۱" class="h-16 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKxdaFQQMTnW_ylN1UFdP6c58uX3_m-KBHkBbvjRlxhNcNmHC9kD_Bzs47AVKu809pnrICbEzXFdvQ1wwORAvXrFObJkqbwzqFNSXpKRK53XP65N_58bXJPACMaq0Ov1vOZ7ihWUZzt1eJ0jhPmEnvKPfBaMWct0RaKm9WmIDRd12FbimVc39LQ6-iSW2G73iM1u43Hw_vy6XK0HWauNe9TwTjhhNLcHQ_BfRJe12McvlOnGwFjGpT2qE7uRqJ7KQtIiReJu7JMRg"/>
-<p class="text-sm text-soft-navy/80 dark:text-white/80">شریک ملی ۱</p>
-</div>
-<div class="flex flex-col items-center gap-2">
-<img alt="شریک ملی ۲" class="h-16 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoJA9IrKrhGa_CWVNkM7mJEF3uQEcv56YyOYYIgAJjPfeED1ain-OgJZC7ALPqfWzLH0OU4FBzQs5alnGRph31X9-gWte7DhycaJtP6nHCUH5-x8SgkKhuidcEhLPQKB01ZQWa74sa_FKutGRctyy6vj48NE7jtdkKVqRl9tmfZjuAnx0NVQjKx3gjWAdr3LORILZPaSqVrjEW2EuoL0zQNybOUtz5WnQzAR0ppPVYZ5xMiYulIwLHZp8iko9GXmswnV6d0_cKVL8"/>
-<p class="text-sm text-soft-navy/80 dark:text-white/80">شریک ملی ۲</p>
-</div>
-<div class="flex flex-col items-center gap-2">
-<img alt="شریک ملی ۳" class="h-16 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwTtBM71QiagVKZzbGpNr7RtEMVSikAvh3_qEUXLyNCsbNTBHth6L4Mt32o5_-sYMwYqOwUsO5bl139tIA7VRekLwH0uGfICTEIxUNivcAr-Lyv-9Wi1TEB_yJ9lNukzVZltttgLjGUQAWWQQRClxq104kgnvX8H2uA31XPpE-JWBaI63GgpSt_4tu-EK-zvKk25mY8lQuJznVSPMFl6OlzXm1bGiJLDuclzcHPtpj7QQdY71x2AIIjxTP0puD-WJFCJ4lKMxUtkg"/>
-<p class="text-sm text-soft-navy/80 dark:text-white/80">شریک ملی ۳</p>
-</div>
-</div>
-</div>
+
+<!--MAIN STARTS-->>
+<main class="flex flex-col gap-10">
+	<div class="@container">
+	<div class="@[480px]:p-4">
+	<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4" data-alt="Subtle arabesque pattern" style='background-image: linear-gradient(rgba(0, 0, 128, 0.5) 0%, rgba(0, 0, 128, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuaLjMiEEDTUCMdbQN9y5dy5DXSp5z8cYOU0uSXR3pqmNE0L6wYmLBX3v9tduIPq5MeJ-dX6JVXUwuZPWxFS_y_E7EXygZIv0IDhqGYXAY0X1WqqgRM-UESGgdfiQARScRoZlUivmxEvurA14ayQqzWyAhvr3l5N3ptvwJAsHxOZBzocxFwBD8OnW8O3cA72oD_J8uaItz4ILQQwx13P0S3CRsHKWUTMoDlPA9MTisjFwdXGU4QjvbuI23Bv7-LOSyEN3pDc0QySc");'>
+	<div class="flex flex-col gap-4 text-center">
+	<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+												پلتفرم ملی هم‌افزایی در حوزه خانواده و جمعیت
+											</h1>
+	<h2 class="text-white/80 text-sm font-normal leading-normal @[480px]:text-base">
+												نمایشگاه ملی جمعیت و خانواده  
+											</h2>
+	</div>
+	<div class="flex flex-col gap-6 items-center w-full max-w-lg">
+	<div class="flex gap-4 py-6 px-4 w-full">
+	<div class="flex grow basis-0 flex-col items-stretch gap-4">
+	<div class="flex h-14 grow items-center justify-center rounded-lg px-3 bg-white/10 backdrop-blur-sm border border-white/20">
+	<p class="text-white text-2xl font-bold leading-tight tracking-[-0.015em]">10</p>
+	</div>
+	<div class="flex items-center justify-center"><p class="text-white text-sm font-normal leading-normal">Days</p></div>
+	</div>
+	<div class="flex grow basis-0 flex-col items-stretch gap-4">
+	<div class="flex h-14 grow items-center justify-center rounded-lg px-3 bg-white/10 backdrop-blur-sm border border-white/20">
+	<p class="text-white text-2xl font-bold leading-tight tracking-[-0.015em]">23</p>
+	</div>
+	<div class="flex items-center justify-center"><p class="text-white text-sm font-normal leading-normal">Hours</p></div>
+	</div>
+	<div class="flex grow basis-0 flex-col items-stretch gap-4">
+	<div class="flex h-14 grow items-center justify-center rounded-lg px-3 bg-white/10 backdrop-blur-sm border border-white/20">
+	<p class="text-white text-2xl font-bold leading-tight tracking-[-0.015em]">59</p>
+	</div>
+	<div class="flex items-center justify-center"><p class="text-white text-sm font-normal leading-normal">Minutes</p></div>
+	</div>
+	<div class="flex grow basis-0 flex-col items-stretch gap-4">
+	<div class="flex h-14 grow items-center justify-center rounded-lg px-3 bg-white/10 backdrop-blur-sm border border-white/20">
+	<p class="text-white text-2xl font-bold leading-tight tracking-[-0.015em]">59</p>
+	</div>
+	<div class="flex items-center justify-center"><p class="text-white text-sm font-normal leading-normal">Seconds</p></div>
+	</div>
+	</div>
+	<div class="flex flex-wrap gap-3 justify-center">
+	<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-soft-navy text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+	<span class="truncate">ثبت نام</span>
+	</button>
+	<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-white/10 backdrop-blur-sm text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] border border-white/20">
+	<span class="truncate">آخرین اخبار</span>
+	</button>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="px-4 py-10 text-center flex flex-col items-center gap-4">
+	<h2 class="text-3xl font-bold text-soft-navy dark:text-white">چشم انداز و ماموریت</h2>
+	<p class="text-soft-navy/80 dark:text-white/80 text-base font-normal leading-relaxed max-w-3xl">
+نمایشگاه ملی جمعیت و خانواده با هدف تقویت همکاری بین ذی نفعان، نمایش نوآوری‌ها در خدمات خانواده و جمعیت و ترویج ارزش‌های پایدار خانواده برگزار می‌شود. ما متعهد به ایجاد بستری هستیم که جوانان را توانمند سازد، سلامت خانواده را تقویت کند و به رشد اقتصادی پایدار کمک کند، همه در چارچوبی که میراث فرهنگی غنی ما را ارج می‌نهد.
+</p>
+	</div>
+	<div class="flex flex-col gap-10 px-4 py-10 @container">
+	<div class="flex flex-col gap-4">
+	<h1 class="text-soft-navy dark:text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+										دسترسی سریع
+									</h1>
+	<p class="text-soft-navy/80 dark:text-white/80 text-base font-normal leading-normal max-w-[720px]">
+										مقدم غرفه داران، بازدید کنندگان و حامیان عزیز را گرامی می‌داریم. از طریق دسترسی های زیر اطلاعات نمایشگاه را مرور نمایید.									</p>
+	</div>
+	<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-0">
+	<div class="flex flex-1 gap-3 rounded-xl border border-primary/20 bg-white dark:bg-soft-navy/20 p-4 flex-col">
+	<div class="text-primary"><span class="material-symbols-outlined text-3xl">info</span></div>
+	<div class="flex flex-col gap-1">
+	<h2 class="text-soft-navy dark:text-white text-base font-bold leading-tight">غرفه داران</h2>
+	<p class="text-soft-navy/70 dark:text-white/70 text-sm font-normal leading-normal">اطلاعات مورد استفاده غرفه داران</p>
+	</div>
+	</div>
+	<div class="flex flex-1 gap-3 rounded-xl border border-primary/20 bg-white dark:bg-soft-navy/20 p-4 flex-col">
+	<div class="text-primary"><span class="material-symbols-outlined text-3xl">map</span></div>
+	<div class="flex flex-col gap-1">
+	<h2 class="text-soft-navy dark:text-white text-base font-bold leading-tight">راهنمای بازدیدکنندگان</h2>
+	<p class="text-soft-navy/70 dark:text-white/70 text-sm font-normal leading-normal">اطلاعات مورد استفاده بازدید کنندگان</p>
+	</div>
+	</div>
+	<div class="flex flex-1 gap-3 rounded-xl border border-primary/20 bg-white dark:bg-soft-navy/20 p-4 flex-col">
+	<div class="text-primary"><span class="material-symbols-outlined text-3xl">handshake</span></div>
+	<div class="flex flex-col gap-1">
+	<h2 class="text-soft-navy dark:text-white text-base font-bold leading-tight">حامیان</h2>
+	<p class="text-soft-navy/70 dark:text-white/70 text-sm font-normal leading-normal">اطلاعات مورد استفاده حامیان و اسپانسر ها</p>
+	</div>
+	</div>
+	<div class="flex flex-1 gap-3 rounded-xl border border-primary/20 bg-white dark:bg-soft-navy/20 p-4 flex-col">
+	<div class="text-primary"><span class="material-symbols-outlined text-3xl">groups</span></div>
+	<div class="flex flex-col gap-1">
+	<h2 class="text-soft-navy dark:text-white text-base font-bold leading-tight">توانمند سازی جوانان</h2>
+	<p class="text-soft-navy/70 dark:text-white/70 text-sm font-normal leading-normal">برنامه ها برای جوانان و زوج ها</p>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="flex flex-col gap-6 px-4 py-10">
+	<h2 class="text-soft-navy dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">اخبار ویژه</h2>
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+	<div class="flex flex-col gap-4 rounded-xl overflow-hidden bg-white dark:bg-soft-navy/20 border border-primary/20">
+	<img class="w-full h-48 object-cover" data-alt="A doctor explaining something on a tablet to a patient" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMutlprCkPr-UDH_71AFL-Kp2Xa78QQ0fEMXa6hi0huouSIPXsWqmw5pOkr0pa200E8N29j2MHV_yfAOdMhlmvJ2RFyfegre-gwNRu-luN-uJzvd-XtbaahcDgbeee2y_N5jB4dRlGW5Thl4FlF6OUGIjCFVSFh_zp4ygeaqlb-TeS6HbfS8j0HjqfwIqeWlLCl-eP9_RbdKkqlcgskrIsir_UEy_q23s6vV1xN1N2cfcP67vmv_0euW75WLeSHXVPatHNFlZZsA0"/>
+	<div class="p-6 flex flex-col gap-2">
+	<h3 class="text-soft-navy dark:text-white text-lg font-bold">برگزاری پیش رویداد جامعه پرداز</h3>
+	<p class="text-soft-navy/80 dark:text-white/80 text-sm">پیش رویداد جامعه پرداز در مصلای تهران با حضور ۲۰۰۰ هزار فعال حوزه خانواده و جمعیت برگزار شد.</p>
+	<a class="text-primary font-bold mt-2" href="#">اطلاعات بیشتر</a>
+	</div>
+	</div>
+	<div class="flex flex-col gap-4 rounded-xl overflow-hidden bg-white dark:bg-soft-navy/20 border border-primary/20">
+	<img class="w-full h-48 object-cover" data-alt="Young people collaborating in a modern office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfcPOPbIE7f4KVm_HPZZt6l67ZOyHkkKf_zwTdAbL_pl5ZCBvNFwj7pEjvDgite72m1OA0Ir8nzwGPkCuKK3tFzWEmxDhA8UArV6XX6CPSar8iNMWX7cPgOjXITvLKJM_8WojeOH3e0M2WWBVoV_NsKelPgmgAaXdjEdaneYvyNdu3As8ZcIGOPb53MYpER2oxjV-c8lkb4aVWwhhgFU2zwnuGvkp0VpbGRwtOywX053kXfylSO2lntM1Ayd7JsvKrFnMI_Q1R6GM"/>
+	<div class="p-6 flex flex-col gap-2">
+	<h3 class="text-soft-navy dark:text-white text-lg font-bold">رویداد های قبل از نمایشگاه با تمرکز بر جوانان</h3>
+	<p class="text-soft-navy/80 dark:text-white/80 text-sm">مجموعه‌ای از کارگاه‌ها و مسابقات برای نمایش پروژه‌های نوآورانه جوانان کشور برگزار می‌شود.</p>
+	<a class="text-primary font-bold mt-2" href="#">بیشتر بدانید</a>
+	</div>
+	</div>
+	<div class="flex flex-col gap-4 rounded-xl overflow-hidden bg-white dark:bg-soft-navy/20 border border-primary/20">
+	<img class="w-full h-48 object-cover" data-alt="A group of people working together on a project" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFvbhTW7B47Oe632WaaosL1uy6_41ITQnzlwbjpbCMjxsHQcKh78Y4K1mTT2GxPqazAjE7g4dVBPmh8ctFMYpE4NVbCSe_3O8KByTxjxyIgWXbSq4JijX4checN3o8LH3D1H7kL8mPy6c2psEAlSG0-FvTQtVH3a4nGWpOBUbV81dA3TENLXWpGt9GWd8w7PZWqTqijFJIeVDOYBtcx6H0W35Gy8Y8Tze_SkAEqWvIEhIwHK6L3y6JaUNxuKfAFcSihJLmWxEPWWg"/>
+	<div class="p-6 flex flex-col gap-2">
+	<h3 class="text-soft-navy dark:text-white text-lg font-bold">مروری بر جایگاه نمایشگاه خانواده در جهان</h3>
+	<p class="text-soft-navy/80 dark:text-white/80 text-sm">بررسی وضعیت حضور و برجستگی نمایشگاه های خانواده در جهان و کشور های مختلف و مقایسه آن با فرهنگ و کشور ایران</p>
+	<a class="text-primary font-bold mt-2" href="#">بیشتر بدانید</a>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="px-4 py-10 text-center flex flex-col items-center gap-8">
+	<h2 class="text-3xl font-bold text-soft-navy dark:text-white">شریکان و حامیان</h2>
+	<div class="w-full overflow-hidden">
+	<div class="flex animate-scroll whitespace-nowrap">
+	<div class="flex-shrink-0 mx-8 flex items-center justify-center">
+	<img class="h-12" data-alt="Sponsor Logo 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxvk7Xt-JSeDUt5mDCkCrMdKW0ahUEfN8fEnkNZEqJ3d2PuLYuaYHNV08y0YUlb9XT8SFJ6i4W1OMSZKrlUpTiWmAmtKXsW7LBJ_2NinS2ZC8WEIUyzg_-JF8mVfNfZMN7DwHTxKKAxKeQonFsvG1dGmHhALemWdE2dfkwXeY9Ov6F0NwGEt9eVNB-1xn28lx_3YDvDKsK21l7847dQE3pcjiu8jRWNBBZoPO168BPY38C3WK560NYUd5DPJaWK5eKCOxQjHe5vOo"/>
+	</div>
+	<div class="flex-shrink-0 mx-8 flex items-center justify-center">
+	<img class="h-12" data-alt="Sponsor Logo 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDmjc8qJC8oAhFW6R85Jq1a68li4Sh4QB272P37833ovyoC6nn26n51gyQ8n6j7qwT5WHNOwbqtQX8GW3vIFfkbx6orTZDznHyArsRNkGjA7H17Jwc0i6fJBFtokHVyqnMorUJAQfsFwlkcJgTvIygODSspNFZxwa9cTVOGSPZ7vGP7caxjRRiyV6w_HpbzqCVpAxT2nlHNuezZCXnaNCiE2X-BggVbXs9nH8hWKqAi6r5Mz_MgllIGdbslSfQzdOBum0ok7kABfc"/>
+	</div>
+	<div class="flex-shrink-0 mx-8 flex items-center justify-center">
+	<img class="h-12" data-alt="Sponsor Logo 3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGY_iLf6zhjTsx_FApVlyUhKdS3ntcFSWMejPLb_cClGdb0Z9Zl3pBC8mhhZIwAR8rKKXt8aq0jGa42fG4Sg8HkOD-zBcPVQM0wjdmfLg5S4kE9a8FNydcjYm4-TWPNowD0hbHHuF8qa4kTCNMDYb7MyKtVx1QmKf7_009FHirAJMEqNJwGtRBHWtTZV8tgwAalIvOxBnF3K-PZ95TLnE2nee6mNzTVJAAs7kPst41ufwE0sSdMOdjSet47CvneI7NhgRcOnZOJSk"/>
+	</div>
+	<div class="flex-shrink-0 mx-8 flex items-center justify-center">
+	<img class="h-12" data-alt="Sponsor Logo 4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtYa8LdGsZqvcblWKUmtyupeRHf_gsd1nfJ8ha08GQkdjTIcnwP-aQRCfFDPvxKbnjBu0Z6HYQmb5NJhJgIn8DaPVtj3_thP0HQnstyOdsDeGV9WQGUbgaMvsAKMJHA403nVEEngXsYaWIOgYCIIu7QeD70Wru2_FtsQQrRapJSkX5rqv3F3iNfxAzG9IRA1aqETA04rwgDZ33A3THuxtMSOEoTI0uw9z6r_2d_Hrg35izTM_X043KA1pKeoyN2a4U7sL3swRnfO4"/>
+	</div>
+	<div class="flex-shrink-0 mx-8 flex items-center justify-center">
+	<img class="h-12" data-alt="Sponsor Logo 5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4qRKkalBbs2hj4noHpS6SAbEcOpPr7Y-_zH-cB1k7taTKkq_bPXZ6lBF_YSzKaVPLIkQOYJibMaM64ebN91UA-xe1OW_EfDmL7fYTpQ6WSNGftz148qyRQjxRE0nScJBcM27ug8IoALk4Hhl6r9lI0RGDxHjYfgTzqQrnU_-BwPGhYEFxnB0HDeZQCHt4cRyVhmuwSmk8qixjdJvg078Fjpu-17G6F2Ve6Q5a80LZw51yd-48aJCoAIZHXvfjYEIBss7kSWAYqf8"/>
+	</div>
+	<div class="flex-shrink-0 mx-8 flex items-center justify-center">
+	<img class="h-12" data-alt="Sponsor Logo 6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-0klxVGV0rEAWw3I4CVAR-qndjBKlThEOdUa_tfpYWRuGNo58X_3E0yp5NRl-UFJgO1JjA6XYQDjClEmpVe8rjxwbr7TVc2Fj_kRxBZkNVSNQze5QaWrMKHnMIEyLCcsUv9H6LFdhiWuUVIfQbULTiJY0Aj3Tsvw7ZMtaS95FusxVQY-yvi7DxfonXWvZxvCel3Jng5d_9v5jnHxMaVUVmIgKqv58KtANjej1cSgSFA_0vo7gmY18QMJBrtWszVSpvF9DwW-mT64"/>
+	</div>
+	<div class="flex-shrink-0 mx-8 flex items-center justify-center">
+	<img class="h-12" data-alt="Sponsor Logo 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIM6ekHBqMnBWbAMmYlSZ45MeVq2bi-6FpsjnXMcafvBBBqZeci2xrP3o3ojdd14a9flldx7Fq2mZu2JZu2rq3K9MYzNzNrZfdR5TUvDoKuf3vTg5RZNo-l8_aBfkkzixpnMIfUlsdrjEXTc1-CfzqicRz3h0qJGhyYF4crCWSriGcjGef4ndAoIUXXGrkQC6EK8_nyF0wLNmHEsC24cwEzQUjyFcKltXX4hDSmOlOgU3Qze_LmWzLE0ca4hvC-loZ5BpXbulGMvY"/>
+	</div>
+	<div class="flex-shrink-0 mx-8 flex items-center justify-center">
+	<img class="h-12" data-alt="Sponsor Logo 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBir12hsRmfOBkUE-1mL06TTbPv-dodZWR5HxfWO12Vyrkfu4B8mRON-nrMHs3-E3OIh4hS40nBCIDgptiSzMC0YCoRe5Hxytzs1SJYu4BG_FSZ2CQGeXCaqrULq35lQdld2V0nZt6xJii9cgcbxyNcnHz68hS_UppFsvQ_ZkN7s2WuyjXwltBc4WWH_SCxkyc8fHLgNIwLMwFoqHBo33iN39-YmODzQGXfHGvSj92b4mZbltGrllZMSF3IO9BziJc6TcDmZc4bBkE"/>
+	</div>
+	<div class="flex-shrink-0 mx-8 flex items-center justify-center">
+	<img class="h-12" data-alt="Sponsor Logo 3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALZBc8H-JqcKXIMmrsgjz6Od7WqlqRgxOvKpMkqGLluNVbW4OBNW_BceXscAyKfl2ardgGCTB1OLy36_dX599OwomERTEtF5lat2rAks2kQolLtCAQjMLPXv134gkdLo6PWMLGjX59AtEWaKj6ioSrZMpVlC8dtXzjLgYbKqjfDBH0mgdbKZzO5qsMCDwTRtgH__P-RcY8EnnDnpRuOo8xi4CmrRVSWqySZ48gGX465OtYVeYEA26lofaNxeh1yCvZf9yecGp2ApI"/>
+	</div>
+	<div class="flex-shrink-0 mx-8 flex items-center justify-center">
+	<img class="h-12" data-alt="Sponsor Logo 4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnpa_24bT1kB1ng2ny6qIV4ukErNRES9c_m1zGrE9ck3c24DtVXweOFYip9ncrA7fKlMVyeb-2M4pGNcOoefeqAYQ09R-D8qUn5HQvU8hr1NX5vGZzFgv5bxKyv9zKs_VUEQopdUwnM2SialcHZCPmwgWOoVEaJawoUZhV8KvFiwjyVJN2mlhsFRO4n2AkRC-9vgABIh7LyaTxDB5pienFDDwe0q5aDftm6gEg0Cgaww_elFMlz88i9PngrG7mEGuDxZnsPVkCVls"/>
+	</div>
+	<div class="flex-shrink-0 mx-8 flex items-center justify-center">
+	<img class="h-12" data-alt="Sponsor Logo 5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcjt0bsWinu_jLd1jFNZ65PqcWKTSFoIdYk7le1PHRf748rA_QrmT0hnzptf8RnUCAwaKdfxVC4eZybddLvzHTCvx3d2WFH2WEVCSXyZ9x8TNlZXaU6PwAEHe5dpiHSokVd6avTBZ-qe5px-Cbw0q8u4U87JVyzhsv0WOkds7r-OiyP6MwK-NXrWXlDBW1_1nGmBfq2WeHlVpclBJQFOlAaEZWN_XsIUs5Vijcac2nU5HqigrpJAeGjxUr_JyTGP4kTY_XnTq2yKE"/>
+	</div>
+	<div class="flex-shrink-0 mx-8 flex items-center justify-center">
+	<img class="h-12" data-alt="Sponsor Logo 6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3rQmNrNISJw0zJ1ldWsmRk5rEBS3KMGqO9lUz0-kcXWjcfJWxqZlVEpSltphF9W8kILPKVW-q-O9gOu6Vqo8QAe5N9eF7hy5zoTK1G5ip90KCHgT4NwKD_U1fnc7X4DdJ4S1MRdjSw7QecTbW1tCfTNVOTZgiICz80qmhBIfpSPtJsr-9tRYx1D7mkox14craWq_jnD2VnyxcDherx1sv21EMHE1Y4xaRVQMSwE_X9pPheQ4fZVnumTWqI6ted708A_-ShjTzdCY"/>
+	</div>
+	</div>
+	</div>
+	</div>
 </main>
+
+
+<!--Footer STARTS-->>
 <footer class="mt-10 border-t border-solid border-primary/20 pt-8 pb-6 px-10">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="flex flex-col gap-4">
-<h3 class="text-lg font-bold text-soft-navy dark:text-white">نمایشگاه ملی جمعیت و خانواده</h3>
-<p class="text-sm text-soft-navy/80 dark:text-white/80">گامی به سوی آینده&zwnj;ای روشن برای خانواده ایرانی.</p>
-<div class="flex gap-4 mt-2">
-<a href="#" class="relative inline-block w-6 h-6 group text-soft-navy/70 dark:text-white/70">
-    <!-- Gray Version (Default - Visible) -->
-    <svg class="w-6 h-6 transition-all group-hover:opacity-0" viewBox="0 0 495.37 543.04" fill="none">
-        <path fill="currentColor" d="M246.07,0h1.76c.48,42.73-.25,128.44-.25,128.44-40.86-22.92-82-45.3-122.84-68.29q40.13-22.81,80.32-45.51c12.69-7.16,26.33-13.31,41-14.64Z"></path>
-        <path d="M247.73,0h3C266.62,1.43,281,9,294.67,16.68Q332.91,38.25,371.05,60c-41,22.73-82.45,45.82-123.51,68.48-.35-42.73.63-85.77.15-128.5Z" fill="currentColor"></path>
-        <path d="M124.77,60.11,247.61,128.4,123.92,200.66s-.06-45.85.08-68.71C123.89,108.21,124.77,60.11,124.77,60.11Z" fill="currentColor"></path>
-        <path d="M371.19,60l.35.19c-.1,42.59,0,85.18,0,127.77-.07,4.17-.11,12.77-.11,12.77L247.62,128.45S330.2,82.76,371.23,60Z" fill="currentColor"></path>
-        <path d="M371.44,60.21c27.28,15.51,54.37,31.36,81.47,47.17,13.11,7.36,27,15.52,34.16,29.39-38.38,21.25-115.68,64-115.68,64s-.06-8.61,0-12.78q0-63.89,0-127.77Z" fill="currentColor"></path>
-        <path d="M46.5,105c25.65-15,78.19-44.88,78.19-44.88L124,200.66S47,158.21,8.71,137C17.05,122.13,32.11,113.12,46.5,105Z" fill="currentColor"></path>
-        <path d="M247.5,128.44l123.81,72.3s-39.84,22-59.62,32.64c-21.14,12-64.09,35.82-64.09,35.82L123.94,200.66Z" fill="#fff"></path>
-        <path d="M0,193C.11,174.17-.23,154.15,8.66,137,47,158.21,123.92,200.66,123.92,200.66,82.55,224.58,41.38,248.86,0,272.81,0,246.21,0,219.62,0,193Z" fill="currentColor"></path>
-        <path d="M487.07,136.77c7.54,14.1,8.64,30.5,8.22,46.19v90.11L371.41,200.76S448.69,158,487.07,136.77Z" fill="currentColor"></path>
-        <path d="M123.92,200.66c.19-.08,123.66,68.54,123.66,68.54s0,71.69.07,106.76c.2,11.29-.07,34.11-.07,34.11-41.27-22.78-82.32-45.76-123.6-68.54l-.07-.31V200.66Z" fill="#e4e4e4"></path>
-        <path d="M0,272.81c41.35-24,82.52-48.23,123.89-72.15q-.06,70.29,0,140.56c-6.35-2.65-12.13-6.43-18.19-9.64C70.5,312.21,35.38,292.39,0,273.21v-.4Z" fill="currentColor"></path>
-        <path d="M371.39,200.76v86.18c-.13,18.27.46,36.47,0,54.73-41.21,22.4-123.82,68.4-123.82,68.4s.27-22.82.07-34.11c0-35.07-.07-106.76-.07-106.76Z" fill="#f1f1f1"></path>
-        <path d="M371.39,200.76s123.88,72.14,123.88,72.31c-41.17,22.82-123.87,68.6-123.87,68.6h0c.46-18.26-.13-36.46,0-54.73V200.76Z" fill="currentColor"></path>
-        <path d="M0,273.21c35.36,19.21,70.43,39,105.7,58.4,6.06,3.21,11.84,7,18.19,9.64l.07.31Q67,374.79,10,408.05C6,402,4,394.86,2.53,387.8.14,376,0,364,0,352v-78.8Z" fill="currentColor"></path>
-        <path d="M495.27,273.07c.06,27.65,0,55.3,0,82.95.4,17.73-.12,36.62-9.57,52.25-34.2-20-114.33-66.6-114.33-66.6S454.1,295.89,495.27,273.07Z" fill="currentColor"></path>
-        <path d="M10,408Q67,374.72,124,341.53c-.25,46.83.08,93.67-.16,140.49q-40.35-22.75-80.49-45.86C30.82,428.76,18,420.53,10,408Z" fill="currentColor"></path>
-        <path d="M124,341.53c41.28,22.78,82.33,45.76,123.6,68.54-41.2,24-123.7,72-123.76,71.95.24-46.82-.09-93.66.16-140.49Z" fill="currentColor"></path>
-        <path d="M371.2,341.76l.2-.09c.12,46.84-.25,93.69.19,140.53l-.31.15c-32.66-19.51-65.71-38.4-98.52-57.68-8.26-4.7-25.18-14.6-25.18-14.6S330,364.21,371.2,341.76Z" fill="currentColor"></path>
-        <path d="M371.4,341.67h0c3.65,2.49,80.13,46.62,114.33,66.6-4.86,8.3-12.56,14.39-20.32,19.84-12.52,8.42-25.88,15.47-38.9,23.05-18.31,10.35-36.5,20.91-54.92,31-.44-46.84-.07-93.69-.19-140.53Z" fill="currentColor"></path>
-        <path d="M247.58,410.07V543c-10.25-1.51-21.42-3.87-30.5-9.08C186,516.66,154.81,499.5,123.82,482,165,458,206.38,434.12,247.58,410.07Z" fill="currentColor"></path>
-        <path d="M247.58,410.07s16.92,9.9,25.18,14.6c32.81,19.28,65.86,38.17,98.52,57.68q-47.79,26.44-95.57,53A62.47,62.47,0,0,1,249.84,543h-2.26Z" fill="currentColor"></path>
-        <path d="M602.83,233.66" fill="#f1f1f1"></path>
-    </svg>
-
-    <!-- Colorful Version (Hidden - Shows on Hover) -->
-    <svg class="w-6 h-6 absolute top-0 left-0 opacity-0 transition-all group-hover:opacity-100" viewBox="0 0 495.37 543.04" fill="none">
-        <path d="M246.07,0h1.76c.48,42.73-.25,128.44-.25,128.44-40.86-22.92-82-45.3-122.84-68.29q40.13-22.81,80.32-45.51c12.69-7.16,26.33-13.31,41-14.64Z" fill="#b8ce01"></path>
-        <path d="M247.73,0h3C266.62,1.43,281,9,294.67,16.68Q332.91,38.25,371.05,60c-41,22.73-82.45,45.82-123.51,68.48-.35-42.73.63-85.77.15-128.5Z" fill="#7db425"></path>
-        <path d="M124.77,60.11,247.61,128.4,123.92,200.66s-.06-45.85.08-68.71C123.89,108.21,124.77,60.11,124.77,60.11Z" fill="#f6a925"></path>
-        <path d="M371.19,60l.35.19c-.1,42.59,0,85.18,0,127.77-.07,4.17-.11,12.77-.11,12.77L247.62,128.45S330.2,82.76,371.23,60Z" fill="#35ac9d"></path>
-        <path d="M371.44,60.21c27.28,15.51,54.37,31.36,81.47,47.17,13.11,7.36,27,15.52,34.16,29.39-38.38,21.25-115.68,64-115.68,64s-.06-8.61,0-12.78q0-63.89,0-127.77Z" fill="#59d6bd"></path>
-        <path d="M46.5,105c25.65-15,78.19-44.88,78.19-44.88L124,200.66S47,158.21,8.71,137C17.05,122.13,32.11,113.12,46.5,105Z" fill="#ef7414"></path>
-        <path d="M247.5,128.44l123.81,72.3s-39.84,22-59.62,32.64c-21.14,12-64.09,35.82-64.09,35.82L123.94,200.66Z" fill="#fff"></path>
-        <path d="M0,193C.11,174.17-.23,154.15,8.66,137,47,158.21,123.92,200.66,123.92,200.66,82.55,224.58,41.38,248.86,0,272.81,0,246.21,0,219.62,0,193Z" fill="#e74b50"></path>
-        <path d="M487.07,136.77c7.54,14.1,8.64,30.5,8.22,46.19v90.11L371.41,200.76S448.69,158,487.07,136.77Z" fill="#794387"></path>
-        <path d="M123.92,200.66c.19-.08,123.66,68.54,123.66,68.54s0,71.69.07,106.76c.2,11.29-.07,34.11-.07,34.11-41.27-22.78-82.32-45.76-123.6-68.54l-.07-.31V200.66Z" fill="#e4e4e4"></path>
-        <path d="M0,272.81c41.35-24,82.52-48.23,123.89-72.15q-.06,70.29,0,140.56c-6.35-2.65-12.13-6.43-18.19-9.64C70.5,312.21,35.38,292.39,0,273.21v-.4Z" fill="#794387"></path>
-        <path d="M371.39,200.76v86.18c-.13,18.27.46,36.47,0,54.73-41.21,22.4-123.82,68.4-123.82,68.4s.27-22.82.07-34.11c0-35.07-.07-106.76-.07-106.76Z" fill="#f1f1f1"></path>
-        <path d="M371.39,200.76s123.88,72.14,123.88,72.31c-41.17,22.82-123.87,68.6-123.87,68.6h0c.46-18.26-.13-36.46,0-54.73V200.76Z" fill="#4c3683"></path>
-        <path d="M0,273.21c35.36,19.21,70.43,39,105.7,58.4,6.06,3.21,11.84,7,18.19,9.64l.07.31Q67,374.79,10,408.05C6,402,4,394.86,2.53,387.8.14,376,0,364,0,352v-78.8Z" fill="#4c3683"></path>
-        <path d="M495.27,273.07c.06,27.65,0,55.3,0,82.95.4,17.73-.12,36.62-9.57,52.25-34.2-20-114.33-66.6-114.33-66.6S454.1,295.89,495.27,273.07Z" fill="#e74b50"></path>
-        <path d="M10,408Q67,374.72,124,341.53c-.25,46.83.08,93.67-.16,140.49q-40.35-22.75-80.49-45.86C30.82,428.76,18,420.53,10,408Z" fill="#0f68a0"></path>
-        <path d="M124,341.53c41.28,22.78,82.33,45.76,123.6,68.54-41.2,24-123.7,72-123.76,71.95.24-46.82-.09-93.66.16-140.49Z" fill="#49bdca"></path>
-        <path d="M371.2,341.76l.2-.09c.12,46.84-.25,93.69.19,140.53l-.31.15c-32.66-19.51-65.71-38.4-98.52-57.68-8.26-4.7-25.18-14.6-25.18-14.6S330,364.21,371.2,341.76Z" fill="#f6a925"></path>
-        <path d="M371.4,341.67h0c3.65,2.49,80.13,46.62,114.33,66.6-4.86,8.3-12.56,14.39-20.32,19.84-12.52,8.42-25.88,15.47-38.9,23.05-18.31,10.35-36.5,20.91-54.92,31-.44-46.84-.07-93.69-.19-140.53Z" fill="#ef7414"></path>
-        <path d="M247.58,410.07V543c-10.25-1.51-21.42-3.87-30.5-9.08C186,516.66,154.81,499.5,123.82,482,165,458,206.38,434.12,247.58,410.07Z" fill="#7db425"></path>
-        <path d="M247.58,410.07s16.92,9.9,25.18,14.6c32.81,19.28,65.86,38.17,98.52,57.68q-47.79,26.44-95.57,53A62.47,62.47,0,0,1,249.84,543h-2.26Z" fill="#b8ce01"></path>
-        <path d="M602.83,233.66" fill="#f1f1f1"></path>
-    </svg>
-</a>
-
-<a class="text-soft-navy/70 dark:text-white/70 hover:text-primary" href="#">
-    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 999.63">
-  <g id="File">
-        <path d="M1009.65,466.44c-1.3-21.39-5-42.79-9.7-63.78C987.56,346,964.66,291.8,933.47,242.91,863.09,132.24,747.53,51,619,24a411.57,411.57,0,0,0-57.28-9.1,443.14,443.14,0,0,0-76.38-1.7,388.45,388.45,0,0,0-61.88,7.2c-18.7,2.6-36.89,7.8-55,12.69-16.9,5.3-33.69,11.3-50.09,18.2a469.62,469.62,0,0,0-45.78,22.09,437.61,437.61,0,0,0-42.69,26.29,100.06,100.06,0,0,1-10.6,6.8c-34.19-26-68.78-51.38-104.77-74.77-9.89-6.1-19.49-13-30.59-16.7-18.19-6.4-39.48-1.5-53.78,11.5C16.55,38.57,10.66,57.37,12.26,75.26c.1,23.79-.1,47.69.2,71.48-.3,24-.1,48.18-.2,72.18s-.1,48,.1,72q-.3,42,0,83.87-.3,40.78.1,81.57c.2,34-1.6,68.18,2.19,102.07,2.7,34.89,9.9,69.48,20.3,102.77,47.38,154.85,175.24,283,330.8,328.3l.1.6c32.39,9.6,65.68,16.7,99.27,19.29,37.28,3.6,75.07,3.5,112.16-2.19,19.9-1.5,39.39-6.4,58.88-10.7A566.24,566.24,0,0,0,702,974.59c20.1-8.6,40-17.9,58.89-29.1a455,455,0,0,0,48.38-31.59,496.83,496.83,0,0,0,51.28-43.48,486.75,486.75,0,0,0,35.19-38A500,500,0,0,0,926.27,792c8.6-12.79,16.6-26.09,24.3-39.49,7.89-15.19,15.49-30.39,22.29-46.08,7.4-18.8,14.7-37.69,19.89-57.18,4.4-16,9.2-32,10.8-48.49,4.2-17.39,6.1-35.69,6.8-53.48A412.52,412.52,0,0,0,1009.65,466.44ZM826.51,400.86c-6.1,16.2-16.8,30.09-29.5,41.69-11.09,11-22.09,22.09-33.19,33.19-11.79,11.79-23.59,23.49-35.28,35.39-11.3,11.19-22.6,22.39-33.89,33.79-12.3,12.29-24.7,24.59-36.89,36.89-14,14.09-28.09,28-42.09,42.08-13.2,13.3-26.49,26.49-39.79,39.79s-26.79,26.69-40.09,40.09c-12.29,11.79-23.49,24.89-37.38,35a105.49,105.49,0,0,1-57.89,16c-23.59-1.5-46.68-10.79-63.68-27.39q-78.42-78.42-156.95-157c-12.79-12.7-21.39-29.09-26-46.39-4.8-23.89-2-49.48,10.3-70.77,9.39-16.5,23.79-29.6,40.18-39a107.88,107.88,0,0,1,57.89-9.7c21.39,3.2,41.88,13,56.88,28.79,28.39,28.39,56.68,56.88,85.27,85.18,8.6-8.2,16.9-16.8,25.1-25.3,12-11.49,23.79-23.29,35.28-35.39,11.4-10.59,22.3-21.79,33.09-33.09,7.7-6.89,14.7-14.49,22.1-21.79,12-11.7,23.69-23.59,35.39-35.49,11.29-10.79,22.19-22,33.09-33,11.79-11.49,23.29-23.29,35-34.89a106.64,106.64,0,0,1,42.18-26.39A107.77,107.77,0,0,1,768,274.5c25.7,9.8,46.29,30,57.59,54.88C833.9,352.28,834.9,377.87,826.51,400.86Z" transform="translate(-12 -12.19)"></path>
-             </g>
-        
-    </svg></svg>
-</a>
-<a class="text-soft-navy/70 dark:text-white/70 hover:text-[#ee7f22]" href="#"><svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3584.55 3673.6">
-  <g id="Isolation_Mode" data-name="Isolation Mode">
-    <path d="M1071.43,2.75H2607.66C3171,2.75,3631.82,462.91,3631.82,1026.2v493.93c-505,227-1014.43,1348.12-1756.93,1104.51-61.16,43.46-202.11,222.55-212,358.43-257.11-34.24-553.52-328.88-517.95-646.62C717,2026.91,1070.39,1455.5,1409.74,1225.51c727.32-492.94,1737.05-69,1175.39,283.45-341.52,214.31-1071.84,355.88-995.91-170.24-200.34,57.78-328.58,431.34-87.37,626-223.45,219.53-180.49,623.07,58.36,755.57,241.56-625.87,1082.31-544.08,1422-1291.2,255.57-562-123.34-1202.37-880.91-1104C1529.56,399.34,993.64,881.63,725.62,1453.64,453.68,2034,494.15,2811.15,1052.55,3202.82c657.15,460.92,1356.78,34.13,1780.52-523.68,249.77-328.78,468-693,798.75-903.37v875.72c0,563.28-460.88,1024.86-1024.16,1024.86H1071.43c-563.29,0-1024.16-460.87-1024.16-1024.16V1026.9C47.27,463.61,508.14,2.74,1071.43,2.74Z" transform="translate(-47.27 -2.74)" fill-rule="evenodd"></path>
-  </g>
-</svg>
-
-    <!--<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.011c0 4.432 2.865 8.183 6.839 9.505.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.06.069-.06 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.852 0 1.338-.012 2.419-.012 2.747 0 .268.18.578.688.482A10.001 10.001 0 0022 12.011C22 6.477 17.523 2 12 2z" fill-rule="evenodd"></path></svg>--></svg></a>
-</div>
-</div>
-<div class="col-span-2">
-<div class="grid grid-cols-2 md:grid-cols-3 gap-8">
-<div>
-<h4 class="font-bold text-soft-navy dark:text-white">بخش&zwnj;ها</h4>
-<ul class="mt-4 space-y-2 text-sm text-soft-navy/80 dark:text-white/80">
-<li><a class="hover:text-primary" href="#">درباره ما</a></li>
-<li><a class="hover:text-primary" href="#">برنامه رویدادها</a></li>
-<li><a class="hover:text-primary" href="#">گالری</a></li>
-<li><a class="hover:text-primary" href="#">اخبار</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-soft-navy dark:text-white">مشارکت</h4>
-<ul class="mt-4 space-y-2 text-sm text-soft-navy/80 dark:text-white/80">
-<li><a class="hover:text-primary" href="#">ثبت نام</a></li>
-<li><a class="hover:text-primary" href="#">همکاری</a></li>
-<li><a class="hover:text-primary" href="#">حمایت</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-soft-navy dark:text-white">تماس با ما</h4>
-<ul class="mt-4 space-y-2 text-sm text-soft-navy/80 dark:text-white/80">
-<li><a class="hover:text-primary" href="#">اطلاعات تماس</a></li>
-<li><a class="hover:text-primary" href="#">پرسش&zwnj;های متداول</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="mt-8 pt-6 border-t border-solid border-primary/10 text-center text-sm text-soft-navy/70 dark:text-white/70">
-<p>© ۱۴۰۳ نمایشگاه ملی جمعیت و خانواده. تمامی حقوق محفوظ است.</p>
-</div>
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+	<div class="flex flex-col gap-4">
+	<h3 class="text-lg font-bold text-soft-navy dark:text-white">نمایشگاه ملی جمعیت و خانواده</h3>
+	<p class="text-sm text-soft-navy/80 dark:text-white/80">گامی به سوی آینده&zwnj;ای روشن برای خانواده ایرانی.</p>
+	<div class="flex gap-4 mt-2">
+	<a href="#" class="relative inline-block w-6 h-6 group text-soft-navy/70 dark:text-white/70">
+		<!-- Gray Version (Default - Visible) -->
+		<svg class="w-6 h-6 transition-all group-hover:opacity-0" viewBox="0 0 495.37 543.04" fill="none">
+			<path fill="currentColor" d="M246.07,0h1.76c.48,42.73-.25,128.44-.25,128.44-40.86-22.92-82-45.3-122.84-68.29q40.13-22.81,80.32-45.51c12.69-7.16,26.33-13.31,41-14.64Z"></path>
+			<path d="M247.73,0h3C266.62,1.43,281,9,294.67,16.68Q332.91,38.25,371.05,60c-41,22.73-82.45,45.82-123.51,68.48-.35-42.73.63-85.77.15-128.5Z" fill="currentColor"></path>
+			<path d="M124.77,60.11,247.61,128.4,123.92,200.66s-.06-45.85.08-68.71C123.89,108.21,124.77,60.11,124.77,60.11Z" fill="currentColor"></path>
+			<path d="M371.19,60l.35.19c-.1,42.59,0,85.18,0,127.77-.07,4.17-.11,12.77-.11,12.77L247.62,128.45S330.2,82.76,371.23,60Z" fill="currentColor"></path>
+			<path d="M371.44,60.21c27.28,15.51,54.37,31.36,81.47,47.17,13.11,7.36,27,15.52,34.16,29.39-38.38,21.25-115.68,64-115.68,64s-.06-8.61,0-12.78q0-63.89,0-127.77Z" fill="currentColor"></path>
+			<path d="M46.5,105c25.65-15,78.19-44.88,78.19-44.88L124,200.66S47,158.21,8.71,137C17.05,122.13,32.11,113.12,46.5,105Z" fill="currentColor"></path>
+			<path d="M247.5,128.44l123.81,72.3s-39.84,22-59.62,32.64c-21.14,12-64.09,35.82-64.09,35.82L123.94,200.66Z" fill="#fff"></path>
+			<path d="M0,193C.11,174.17-.23,154.15,8.66,137,47,158.21,123.92,200.66,123.92,200.66,82.55,224.58,41.38,248.86,0,272.81,0,246.21,0,219.62,0,193Z" fill="currentColor"></path>
+			<path d="M487.07,136.77c7.54,14.1,8.64,30.5,8.22,46.19v90.11L371.41,200.76S448.69,158,487.07,136.77Z" fill="currentColor"></path>
+			<path d="M123.92,200.66c.19-.08,123.66,68.54,123.66,68.54s0,71.69.07,106.76c.2,11.29-.07,34.11-.07,34.11-41.27-22.78-82.32-45.76-123.6-68.54l-.07-.31V200.66Z" fill="#e4e4e4"></path>
+			<path d="M0,272.81c41.35-24,82.52-48.23,123.89-72.15q-.06,70.29,0,140.56c-6.35-2.65-12.13-6.43-18.19-9.64C70.5,312.21,35.38,292.39,0,273.21v-.4Z" fill="currentColor"></path>
+			<path d="M371.39,200.76v86.18c-.13,18.27.46,36.47,0,54.73-41.21,22.4-123.82,68.4-123.82,68.4s.27-22.82.07-34.11c0-35.07-.07-106.76-.07-106.76Z" fill="#f1f1f1"></path>
+			<path d="M371.39,200.76s123.88,72.14,123.88,72.31c-41.17,22.82-123.87,68.6-123.87,68.6h0c.46-18.26-.13-36.46,0-54.73V200.76Z" fill="currentColor"></path>
+			<path d="M0,273.21c35.36,19.21,70.43,39,105.7,58.4,6.06,3.21,11.84,7,18.19,9.64l.07.31Q67,374.79,10,408.05C6,402,4,394.86,2.53,387.8.14,376,0,364,0,352v-78.8Z" fill="currentColor"></path>
+			<path d="M495.27,273.07c.06,27.65,0,55.3,0,82.95.4,17.73-.12,36.62-9.57,52.25-34.2-20-114.33-66.6-114.33-66.6S454.1,295.89,495.27,273.07Z" fill="currentColor"></path>
+			<path d="M10,408Q67,374.72,124,341.53c-.25,46.83.08,93.67-.16,140.49q-40.35-22.75-80.49-45.86C30.82,428.76,18,420.53,10,408Z" fill="currentColor"></path>
+			<path d="M124,341.53c41.28,22.78,82.33,45.76,123.6,68.54-41.2,24-123.7,72-123.76,71.95.24-46.82-.09-93.66.16-140.49Z" fill="currentColor"></path>
+			<path d="M371.2,341.76l.2-.09c.12,46.84-.25,93.69.19,140.53l-.31.15c-32.66-19.51-65.71-38.4-98.52-57.68-8.26-4.7-25.18-14.6-25.18-14.6S330,364.21,371.2,341.76Z" fill="currentColor"></path>
+			<path d="M371.4,341.67h0c3.65,2.49,80.13,46.62,114.33,66.6-4.86,8.3-12.56,14.39-20.32,19.84-12.52,8.42-25.88,15.47-38.9,23.05-18.31,10.35-36.5,20.91-54.92,31-.44-46.84-.07-93.69-.19-140.53Z" fill="currentColor"></path>
+			<path d="M247.58,410.07V543c-10.25-1.51-21.42-3.87-30.5-9.08C186,516.66,154.81,499.5,123.82,482,165,458,206.38,434.12,247.58,410.07Z" fill="currentColor"></path>
+			<path d="M247.58,410.07s16.92,9.9,25.18,14.6c32.81,19.28,65.86,38.17,98.52,57.68q-47.79,26.44-95.57,53A62.47,62.47,0,0,1,249.84,543h-2.26Z" fill="currentColor"></path>
+			<path d="M602.83,233.66" fill="#f1f1f1"></path>
+		</svg>
+	
+		<!-- Colorful Version (Hidden - Shows on Hover) -->
+		<svg class="w-6 h-6 absolute top-0 left-0 opacity-0 transition-all group-hover:opacity-100" viewBox="0 0 495.37 543.04" fill="none">
+			<path d="M246.07,0h1.76c.48,42.73-.25,128.44-.25,128.44-40.86-22.92-82-45.3-122.84-68.29q40.13-22.81,80.32-45.51c12.69-7.16,26.33-13.31,41-14.64Z" fill="#b8ce01"></path>
+			<path d="M247.73,0h3C266.62,1.43,281,9,294.67,16.68Q332.91,38.25,371.05,60c-41,22.73-82.45,45.82-123.51,68.48-.35-42.73.63-85.77.15-128.5Z" fill="#7db425"></path>
+			<path d="M124.77,60.11,247.61,128.4,123.92,200.66s-.06-45.85.08-68.71C123.89,108.21,124.77,60.11,124.77,60.11Z" fill="#f6a925"></path>
+			<path d="M371.19,60l.35.19c-.1,42.59,0,85.18,0,127.77-.07,4.17-.11,12.77-.11,12.77L247.62,128.45S330.2,82.76,371.23,60Z" fill="#35ac9d"></path>
+			<path d="M371.44,60.21c27.28,15.51,54.37,31.36,81.47,47.17,13.11,7.36,27,15.52,34.16,29.39-38.38,21.25-115.68,64-115.68,64s-.06-8.61,0-12.78q0-63.89,0-127.77Z" fill="#59d6bd"></path>
+			<path d="M46.5,105c25.65-15,78.19-44.88,78.19-44.88L124,200.66S47,158.21,8.71,137C17.05,122.13,32.11,113.12,46.5,105Z" fill="#ef7414"></path>
+			<path d="M247.5,128.44l123.81,72.3s-39.84,22-59.62,32.64c-21.14,12-64.09,35.82-64.09,35.82L123.94,200.66Z" fill="#fff"></path>
+			<path d="M0,193C.11,174.17-.23,154.15,8.66,137,47,158.21,123.92,200.66,123.92,200.66,82.55,224.58,41.38,248.86,0,272.81,0,246.21,0,219.62,0,193Z" fill="#e74b50"></path>
+			<path d="M487.07,136.77c7.54,14.1,8.64,30.5,8.22,46.19v90.11L371.41,200.76S448.69,158,487.07,136.77Z" fill="#794387"></path>
+			<path d="M123.92,200.66c.19-.08,123.66,68.54,123.66,68.54s0,71.69.07,106.76c.2,11.29-.07,34.11-.07,34.11-41.27-22.78-82.32-45.76-123.6-68.54l-.07-.31V200.66Z" fill="#e4e4e4"></path>
+			<path d="M0,272.81c41.35-24,82.52-48.23,123.89-72.15q-.06,70.29,0,140.56c-6.35-2.65-12.13-6.43-18.19-9.64C70.5,312.21,35.38,292.39,0,273.21v-.4Z" fill="#794387"></path>
+			<path d="M371.39,200.76v86.18c-.13,18.27.46,36.47,0,54.73-41.21,22.4-123.82,68.4-123.82,68.4s.27-22.82.07-34.11c0-35.07-.07-106.76-.07-106.76Z" fill="#f1f1f1"></path>
+			<path d="M371.39,200.76s123.88,72.14,123.88,72.31c-41.17,22.82-123.87,68.6-123.87,68.6h0c.46-18.26-.13-36.46,0-54.73V200.76Z" fill="#4c3683"></path>
+			<path d="M0,273.21c35.36,19.21,70.43,39,105.7,58.4,6.06,3.21,11.84,7,18.19,9.64l.07.31Q67,374.79,10,408.05C6,402,4,394.86,2.53,387.8.14,376,0,364,0,352v-78.8Z" fill="#4c3683"></path>
+			<path d="M495.27,273.07c.06,27.65,0,55.3,0,82.95.4,17.73-.12,36.62-9.57,52.25-34.2-20-114.33-66.6-114.33-66.6S454.1,295.89,495.27,273.07Z" fill="#e74b50"></path>
+			<path d="M10,408Q67,374.72,124,341.53c-.25,46.83.08,93.67-.16,140.49q-40.35-22.75-80.49-45.86C30.82,428.76,18,420.53,10,408Z" fill="#0f68a0"></path>
+			<path d="M124,341.53c41.28,22.78,82.33,45.76,123.6,68.54-41.2,24-123.7,72-123.76,71.95.24-46.82-.09-93.66.16-140.49Z" fill="#49bdca"></path>
+			<path d="M371.2,341.76l.2-.09c.12,46.84-.25,93.69.19,140.53l-.31.15c-32.66-19.51-65.71-38.4-98.52-57.68-8.26-4.7-25.18-14.6-25.18-14.6S330,364.21,371.2,341.76Z" fill="#f6a925"></path>
+			<path d="M371.4,341.67h0c3.65,2.49,80.13,46.62,114.33,66.6-4.86,8.3-12.56,14.39-20.32,19.84-12.52,8.42-25.88,15.47-38.9,23.05-18.31,10.35-36.5,20.91-54.92,31-.44-46.84-.07-93.69-.19-140.53Z" fill="#ef7414"></path>
+			<path d="M247.58,410.07V543c-10.25-1.51-21.42-3.87-30.5-9.08C186,516.66,154.81,499.5,123.82,482,165,458,206.38,434.12,247.58,410.07Z" fill="#7db425"></path>
+			<path d="M247.58,410.07s16.92,9.9,25.18,14.6c32.81,19.28,65.86,38.17,98.52,57.68q-47.79,26.44-95.57,53A62.47,62.47,0,0,1,249.84,543h-2.26Z" fill="#b8ce01"></path>
+			<path d="M602.83,233.66" fill="#f1f1f1"></path>
+		</svg>
+	</a>
+	
+	<a class="text-soft-navy/70 dark:text-white/70 hover:text-primary" href="#">
+		<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 999.63">
+	  <g id="File">
+			<path d="M1009.65,466.44c-1.3-21.39-5-42.79-9.7-63.78C987.56,346,964.66,291.8,933.47,242.91,863.09,132.24,747.53,51,619,24a411.57,411.57,0,0,0-57.28-9.1,443.14,443.14,0,0,0-76.38-1.7,388.45,388.45,0,0,0-61.88,7.2c-18.7,2.6-36.89,7.8-55,12.69-16.9,5.3-33.69,11.3-50.09,18.2a469.62,469.62,0,0,0-45.78,22.09,437.61,437.61,0,0,0-42.69,26.29,100.06,100.06,0,0,1-10.6,6.8c-34.19-26-68.78-51.38-104.77-74.77-9.89-6.1-19.49-13-30.59-16.7-18.19-6.4-39.48-1.5-53.78,11.5C16.55,38.57,10.66,57.37,12.26,75.26c.1,23.79-.1,47.69.2,71.48-.3,24-.1,48.18-.2,72.18s-.1,48,.1,72q-.3,42,0,83.87-.3,40.78.1,81.57c.2,34-1.6,68.18,2.19,102.07,2.7,34.89,9.9,69.48,20.3,102.77,47.38,154.85,175.24,283,330.8,328.3l.1.6c32.39,9.6,65.68,16.7,99.27,19.29,37.28,3.6,75.07,3.5,112.16-2.19,19.9-1.5,39.39-6.4,58.88-10.7A566.24,566.24,0,0,0,702,974.59c20.1-8.6,40-17.9,58.89-29.1a455,455,0,0,0,48.38-31.59,496.83,496.83,0,0,0,51.28-43.48,486.75,486.75,0,0,0,35.19-38A500,500,0,0,0,926.27,792c8.6-12.79,16.6-26.09,24.3-39.49,7.89-15.19,15.49-30.39,22.29-46.08,7.4-18.8,14.7-37.69,19.89-57.18,4.4-16,9.2-32,10.8-48.49,4.2-17.39,6.1-35.69,6.8-53.48A412.52,412.52,0,0,0,1009.65,466.44ZM826.51,400.86c-6.1,16.2-16.8,30.09-29.5,41.69-11.09,11-22.09,22.09-33.19,33.19-11.79,11.79-23.59,23.49-35.28,35.39-11.3,11.19-22.6,22.39-33.89,33.79-12.3,12.29-24.7,24.59-36.89,36.89-14,14.09-28.09,28-42.09,42.08-13.2,13.3-26.49,26.49-39.79,39.79s-26.79,26.69-40.09,40.09c-12.29,11.79-23.49,24.89-37.38,35a105.49,105.49,0,0,1-57.89,16c-23.59-1.5-46.68-10.79-63.68-27.39q-78.42-78.42-156.95-157c-12.79-12.7-21.39-29.09-26-46.39-4.8-23.89-2-49.48,10.3-70.77,9.39-16.5,23.79-29.6,40.18-39a107.88,107.88,0,0,1,57.89-9.7c21.39,3.2,41.88,13,56.88,28.79,28.39,28.39,56.68,56.88,85.27,85.18,8.6-8.2,16.9-16.8,25.1-25.3,12-11.49,23.79-23.29,35.28-35.39,11.4-10.59,22.3-21.79,33.09-33.09,7.7-6.89,14.7-14.49,22.1-21.79,12-11.7,23.69-23.59,35.39-35.49,11.29-10.79,22.19-22,33.09-33,11.79-11.49,23.29-23.29,35-34.89a106.64,106.64,0,0,1,42.18-26.39A107.77,107.77,0,0,1,768,274.5c25.7,9.8,46.29,30,57.59,54.88C833.9,352.28,834.9,377.87,826.51,400.86Z" transform="translate(-12 -12.19)"></path>
+				 </g>
+			
+		</svg></svg>
+	</a>
+	<a class="text-soft-navy/70 dark:text-white/70 hover:text-[#ee7f22]" href="#"><svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3584.55 3673.6">
+	  <g id="Isolation_Mode" data-name="Isolation Mode">
+		<path d="M1071.43,2.75H2607.66C3171,2.75,3631.82,462.91,3631.82,1026.2v493.93c-505,227-1014.43,1348.12-1756.93,1104.51-61.16,43.46-202.11,222.55-212,358.43-257.11-34.24-553.52-328.88-517.95-646.62C717,2026.91,1070.39,1455.5,1409.74,1225.51c727.32-492.94,1737.05-69,1175.39,283.45-341.52,214.31-1071.84,355.88-995.91-170.24-200.34,57.78-328.58,431.34-87.37,626-223.45,219.53-180.49,623.07,58.36,755.57,241.56-625.87,1082.31-544.08,1422-1291.2,255.57-562-123.34-1202.37-880.91-1104C1529.56,399.34,993.64,881.63,725.62,1453.64,453.68,2034,494.15,2811.15,1052.55,3202.82c657.15,460.92,1356.78,34.13,1780.52-523.68,249.77-328.78,468-693,798.75-903.37v875.72c0,563.28-460.88,1024.86-1024.16,1024.86H1071.43c-563.29,0-1024.16-460.87-1024.16-1024.16V1026.9C47.27,463.61,508.14,2.74,1071.43,2.74Z" transform="translate(-47.27 -2.74)" fill-rule="evenodd"></path>
+	  </g>
+	</svg>
+	
+		<!--<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.011c0 4.432 2.865 8.183 6.839 9.505.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.06.069-.06 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.852 0 1.338-.012 2.419-.012 2.747 0 .268.18.578.688.482A10.001 10.001 0 0022 12.011C22 6.477 17.523 2 12 2z" fill-rule="evenodd"></path></svg>--></svg></a>
+	</div>
+	</div>
+	<div class="col-span-2">
+	<div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+	<div>
+	<h4 class="font-bold text-soft-navy dark:text-white">بخش&zwnj;ها</h4>
+	<ul class="mt-4 space-y-2 text-sm text-soft-navy/80 dark:text-white/80">
+	<li><a class="hover:text-primary" href="#">درباره ما</a></li>
+	<li><a class="hover:text-primary" href="#">برنامه رویدادها</a></li>
+	<li><a class="hover:text-primary" href="#">گالری</a></li>
+	<li><a class="hover:text-primary" href="#">اخبار</a></li>
+	</ul>
+	</div>
+	<div>
+	<h4 class="font-bold text-soft-navy dark:text-white">مشارکت</h4>
+	<ul class="mt-4 space-y-2 text-sm text-soft-navy/80 dark:text-white/80">
+	<li><a class="hover:text-primary" href="#">ثبت نام</a></li>
+	<li><a class="hover:text-primary" href="#">همکاری</a></li>
+	<li><a class="hover:text-primary" href="#">حمایت</a></li>
+	</ul>
+	</div>
+	<div>
+	<h4 class="font-bold text-soft-navy dark:text-white">تماس با ما</h4>
+	<ul class="mt-4 space-y-2 text-sm text-soft-navy/80 dark:text-white/80">
+	<li><a class="hover:text-primary" href="#">اطلاعات تماس</a></li>
+	<li><a class="hover:text-primary" href="#">پرسش&zwnj;های متداول</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="mt-8 pt-6 border-t border-solid border-primary/10 text-center text-sm text-soft-navy/70 dark:text-white/70">
+	<p>© ۱۴۰۳ نمایشگاه ملی جمعیت و خانواده. تمامی حقوق محفوظ است.</p>
+	</div>
 </footer>
 </div>
 </div>
 </div>
 </div>
+<style>
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-scroll {
+            animation: scroll 40s linear infinite;
+            display: flex;
+        }
+    </style>
 </body></html>
